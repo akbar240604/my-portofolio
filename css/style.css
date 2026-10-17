@@ -1298,9 +1298,21 @@ h1, h2, h3, h4 {
     display: block;
   }
 
+  .hero-section {
+    padding-top: 6.5rem;
+  }
+
   .hero-stats {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+
+  .stat-item h3 {
+    font-size: 1.5rem;
+  }
+
+  .stat-item p {
+    font-size: 0.78rem;
   }
 
   .projects-grid {
@@ -1311,8 +1323,82 @@ h1, h2, h3, h4 {
     grid-template-columns: 1fr;
   }
 
+  .contact-info-card, .contact-form {
+    padding: 1.5rem;
+  }
+
+  .toast-container {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1.5rem;
+    align-items: center;
+  }
+
+  .toast {
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+  }
+
   .footer-content {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-inline: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.15rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .avatar-card {
+    max-width: 300px;
+    transform: none !important;
+  }
+
+  .floating-pill {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.75rem;
+  }
+
+  .pill-1 { top: -8px; left: 0px; }
+  .pill-2 { bottom: 15px; left: -10px; }
+  .pill-3 { top: 30px; right: -10px; }
+
+  .terminal-body {
+    font-size: 0.78rem;
+    padding: 1rem 0.75rem;
+  }
+
+  .filter-btn {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .modal-card {
+    border-radius: var(--radius-md);
+  }
+
+  .modal-body {
+    padding: 1.25rem;
   }
 }
