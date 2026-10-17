@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Nuruddin Akbar| Senior Fullstack Engineer & Creative Web Developer</title>
+  <meta name="description"
+    content="Portfolio of Muhammad Nuruddin Akbar - Fullstack Engineer specializing in high-performance web applications, modern UI/UX, Next.js, and cloud architectures. Available for hire and freelance projects.">
+  <meta name="keywords"
+    content="Portfolio, Fullstack Developer, Web Developer, Frontend, Next.js, React, TypeScript, Vercel, UI/UX">
+  <meta name="author" content="Muhammad Nuruddin Akbar">
+
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Muhammad Nuruddin Akbar | Fullstack Engineer Portfolio">
+  <meta property="og:description"
+    content="Crafting high-impact digital experiences, scalable web applications, and intuitive user interfaces.">
+  <meta property="og:image" content="./assets/images/avatar.jpg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <!-- Aesthetic Studio Background: Grain Noise, Delicate Dot Matrix & Soft Ambient Glow -->
+  <div class="bg-noise-overlay" aria-hidden="true"></div>
+  <div class="bg-dots-pattern" aria-hidden="true"></div>
+  <div class="spotlight-glow" aria-hidden="true"></div>
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+  <!-- ======================================================================
+       HEADER & NAVIGATION
+       ====================================================================== -->
+  <header class="navbar" id="mainHeader">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="navLogo">
+        <div class="logo-badge">NA</div>
+        <span>Akbar.dev</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active" id="navLinkHome">Home</a></li>
+          <li><a href="#projects" class="nav-link" id="navLinkProjects">Projects</a></li>
+          <li><a href="#skills" class="nav-link" id="navLinkSkills">Skills</a></li>
+          <li><a href="#experience" class="nav-link" id="navLinkExp">Experience</a></li>
+          <li><a href="#contact" class="nav-link" id="navLinkContact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme mode">
+          ☀️
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm" id="navCtaBtn">Hire Me</a>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open mobile menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <button type="button" class="close-mobile-menu" id="closeMobileNav" aria-label="Close menu">&times;</button>
+    <a href="#hero">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main>
+    <!-- ====================================================================
+         HERO SECTION
+         ==================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <div class="hero-content">
+            <div class="hero-badge-available">
+              <span class="pulse-dot"></span>
+              <span>Available for freelance & full-time roles</span>
+            </div>
+
+            <h1 class="hero-title">
+              Crafting <span class="text-gradient">High-Impact</span> Digital Experiences & Scalable Apps.
+            </h1>
+
+            <p class="hero-bio">
+              Hi, I'm <strong>Muhammad Nuruddin Akbar</strong> — a Fullstack Software Engineer with 4+ years of building
+              ultra-responsive web applications, resilient backend architectures, and fluid micro-interactions that
+              users love.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary" id="heroExploreBtn">
+                <span>Explore Projects</span>
+                <span>→</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary" id="heroContactBtn">
+                <span>Get In Touch</span>
+              </a>
+              <a href="./assets/images/avatar.jpg" download="Muhammad_Nuruddin_Akbar_Resume.pdf" class="btn btn-secondary"
+                id="heroResumeBtn">
+                <span>📄 Resume CV</span>
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <h3>4+</h3>
+                <p>Years Experience</p>
+              </div>
+              <div class="stat-item">
+                <h3>25+</h3>
+                <p>Projects Shipped</p>
+              </div>
+              <div class="stat-item">
+                <h3>99.9%</h3>
+                <p>Uptime & Quality</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual-wrapper">
+            <div class="avatar-card" id="avatarCard">
+              <img src="./assets/images/avatar.jpg" alt="Muhammad Nuruddin Akbar Developer Portrait" class="avatar-img" width="380"
+                height="380">
+
+              <!-- Floating badges -->
+              <div class="floating-pill pill-1">
+                <span>⚛️</span>
+                <span>React & Next.js</span>
+              </div>
+              <div class="floating-pill pill-2">
+                <span>⚡</span>
+                <span>Node.js & FastAPI</span>
+              </div>
+              <div class="floating-pill pill-3">
+                <span>☁️</span>
+                <span>Vercel & Docker</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Terminal Console -->
+        <div class="terminal-wrapper" id="terminalWidget">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+            </div>
+            <div class="terminal-title">akbar@macbook-pro: ~/developer-shell</div>
+            <div style="font-size: 0.75rem; color: #6e7681;">bash - 80x24</div>
+          </div>
+
+          <div class="terminal-body" id="terminalOutput">
+            <div class="terminal-line">
+              <span class="terminal-prompt">visitor@portfolio:~$</span> welcome --verbose
+            </div>
+            <div class="terminal-line" style="color: #58a6ff;">
+              🚀 Welcome to Akbar's interactive terminal! Type commands below or click quick tags to explore.
+            </div>
+            <div class="terminal-line" style="color: #8b949e;">
+              Try typing: <strong style="color: #f0883e;">skills</strong>, <strong
+                style="color: #f0883e;">projects</strong>, <strong style="color: #f0883e;">contact</strong>, or <strong
+                style="color: #f0883e;">help</strong>.
+            </div>
+          </div>
+
+          <div class="terminal-tags">
+            <span style="font-size: 0.75rem; color: #8b949e; margin-right: 0.25rem;">Quick Run:</span>
+            <button type="button" class="quick-cmd" data-cmd="skills">skills</button>
+            <button type="button" class="quick-cmd" data-cmd="projects">projects</button>
+            <button type="button" class="quick-cmd" data-cmd="whoami">whoami</button>
+            <button type="button" class="quick-cmd" data-cmd="contact">contact</button>
+            <button type="button" class="quick-cmd" data-cmd="clear">clear</button>
+          </div>
+
+          <div class="terminal-input-row" style="padding: 0.75rem 1rem; background: #0d1117;">
+            <span class="terminal-prompt">visitor@portfolio:~$</span>
+            <input type="text" id="terminalInput" class="terminal-input"
+              placeholder="Type a command (e.g. skills, contact, help)..." autocomplete="off" spellcheck="false"
+              aria-label="Terminal input">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         FEATURED PROJECTS SECTION
+         ==================================================================== -->
+    <section id="projects">
+      <div class="container">
+
+        <header class="section-header">
+          <div class="section-tag">Featured Works</div>
+          <h2 class="section-title">Engineered with <span class="text-gradient">Precision</span></h2>
+          <p class="section-desc">
+            A curated selection of real-world production projects ranging from high-load AI dashboards to immersive 3D
+            digital experiences.
+          </p>
+        </header>
+
+        <!-- Project Filters -->
+        <div class="projects-filter" role="tablist" aria-label="Filter projects">
+          <button type="button" class="filter-btn active" data-filter="all" id="filterAll">All Projects</button>
+          <button type="button" class="filter-btn" data-filter="saas" id="filterSaas">SaaS & Fullstack</button>
+          <button type="button" class="filter-btn" data-filter="creative" id="filterCreative">Creative & 3D Web</button>
+          <button type="button" class="filter-btn" data-filter="fintech" id="filterFintech">Fintech & Mobile</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Project 1: PulseFlow -->
+          <article class="project-card" data-category="saas" id="cardPulseFlow">
+            <div class="project-thumb">
+              <img src="./assets/images/project-saas.jpg" alt="PulseFlow SaaS Analytics Dashboard" loading="lazy">
+              <span class="project-badge-tag">SaaS Platform</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">PulseFlow — AI Telemetry & SaaS Dashboard</h3>
+              <p class="project-desc">
+                High-throughput cloud analytics platform processing millions of API calls in real-time with automated
+                anomaly alerts and financial cohort metrics.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Next.js 14</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <button type="button" class="btn btn-secondary btn-sm view-detail-btn" data-project="saas"
+                  id="btnDetailSaas">
+                  <span>Details</span>
+                  <span>ℹ️</span>
+                </button>
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"
+                  id="btnLiveSaas">
+                  <span>Live Demo</span>
+                  <span>↗</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"
+                  id="btnCodeSaas">
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Luminex Studio -->
+          <article class="project-card" data-category="creative" id="cardLuminex">
+            <div class="project-thumb">
+              <img src="./assets/images/project-creative.jpg" alt="Luminex Studio 3D Portfolio Showcase" loading="lazy">
+              <span class="project-badge-tag">Creative & 3D</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Luminex Studio — 3D Luxury Agency Showcase</h3>
+              <p class="project-desc">
+                Award-winning digital portfolio showcase featuring bespoke 3D glass reflections, dynamic physics
+                animations, and immersive WebGL shaders.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Three.js</span>
+                <span class="tech-tag">WebGL</span>
+                <span class="tech-tag">GSAP</span>
+                <span class="tech-tag">Vanilla CSS</span>
+              </div>
+              <div class="project-links">
+                <button type="button" class="btn btn-secondary btn-sm view-detail-btn" data-project="creative"
+                  id="btnDetailCreative">
+                  <span>Details</span>
+                  <span>ℹ️</span>
+                </button>
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"
+                  id="btnLiveCreative">
+                  <span>Live Demo</span>
+                  <span>↗</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"
+                  id="btnCodeCreative">
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Velocity -->
+          <article class="project-card" data-category="fintech" id="cardVelocity">
+            <div class="project-thumb">
+              <img src="./assets/images/project-fintech.jpg" alt="Velocity Mobile Crypto Trading App" loading="lazy">
+              <span class="project-badge-tag">Fintech / Mobile</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Velocity — Crypto & Asset Management App</h3>
+              <p class="project-desc">
+                Ultra-responsive mobile web application with sub-millisecond order routing, real-time WebSocket tick
+                charts, and biometric wallet protection.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">React Native Web</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Redis</span>
+              </div>
+              <div class="project-links">
+                <button type="button" class="btn btn-secondary btn-sm view-detail-btn" data-project="fintech"
+                  id="btnDetailFintech">
+                  <span>Details</span>
+                  <span>ℹ️</span>
+                </button>
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"
+                  id="btnLiveFintech">
+                  <span>Live Demo</span>
+                  <span>↗</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"
+                  id="btnCodeFintech">
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SKILLS & TECH ARSENAL SECTION
+         ==================================================================== -->
+    <section id="skills">
+      <div class="container">
+
+        <header class="section-header">
+          <div class="section-tag">Tech Stack</div>
+          <h2 class="section-title">Technical <span class="text-gradient">Arsenal</span></h2>
+          <p class="section-desc">
+            Technologies and tools I work with daily to ship modern, production-grade digital software.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+
+          <!-- Category 1: Frontend -->
+          <div class="skill-category-card" id="skillCardFrontend">
+            <div class="category-header">
+              <div class="category-icon">⚡</div>
+              <div>
+                <h3>Frontend Development</h3>
+                <p class="text-muted" style="font-size:0.85rem;">Interactive, fast, and accessible</p>
+              </div>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>React.js / Next.js 14</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>TypeScript & Modern ES6+</span>
+                  <span class="skill-pct">92%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-width="92%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Modern CSS / Tailwind / Glassmorphism</span>
+                  <span class="skill-pct">96%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-width="96%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Three.js & Canvas Visuals</span>
+                  <span class="skill-pct">82%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-width="82%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend -->
+          <div class="skill-category-card" id="skillCardBackend">
+            <div class="category-header">
+              <div class="category-icon">🛡️</div>
+              <div>
+                <h3>Backend & APIs</h3>
+                <p class="text-muted" style="font-size:0.85rem;">Robust data pipelines & security</p>
+              </div>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Node.js / Express</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Python / FastAPI</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>PostgreSQL & Prisma ORM</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-width="88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>REST & GraphQL APIs</span>
+                  <span class="skill-pct">92%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-width="92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: DevOps & Cloud -->
+          <div class="skill-category-card" id="skillCardCloud">
+            <div class="category-header">
+              <div class="category-icon">☁️</div>
+              <div>
+                <h3>Cloud, DevOps & Tools</h3>
+                <p class="text-muted" style="font-size:0.85rem;">Continuous deployment & stability</p>
+              </div>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Vercel / Cloudflare Pages</span>
+                  <span class="skill-pct">98%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-width="98%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Git, GitHub Actions & CI/CD</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Docker Containers</span>
+                  <span class="skill-pct">84%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-width="84%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Lighthouse Performance & SEO</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-width="95%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         WORK EXPERIENCE & JOURNEY
+         ==================================================================== -->
+    <section id="experience">
+      <div class="container">
+
+        <header class="section-header">
+          <div class="section-tag">Career Journey</div>
+          <h2 class="section-title">Milestones & <span class="text-gradient">Experience</span></h2>
+          <p class="section-desc">
+            A look back at how I grew from a passionate coding enthusiast to building mission-critical software.
+          </p>
+        </header>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2024 — PRESENT</div>
+              <h3 class="timeline-role">Lead Fullstack Engineer</h3>
+              <div class="timeline-company">Nova Digital Solutions • Remote</div>
+              <p class="text-muted">
+                Architected scalable frontend platforms with Next.js and microfrontends. Reduced bundle load time by 42%
+                and spearheaded the migration to edge serverless runtime on Vercel.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2022 — 2024</div>
+              <h3 class="timeline-role">Frontend Web Developer</h3>
+              <div class="timeline-company">Aura Interactive Studio • Jakarta</div>
+              <p class="text-muted">
+                Built dynamic web applications, interactive landing pages, and component libraries with React and
+                TypeScript. Collaborated closely with UI/UX designers to achieve pixel-perfect fidelity.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2021 — 2022</div>
+              <h3 class="timeline-role">Junior Web Developer & Contributor</h3>
+              <div class="timeline-company">Freelance & Open Source</div>
+              <p class="text-muted">
+                Developed responsive websites for SMEs and actively contributed to popular open-source utility libraries
+                and community templates.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         CONTACT SECTION
+         ==================================================================== -->
+    <section id="contact">
+      <div class="container">
+
+        <header class="section-header">
+          <div class="section-tag">Get in Touch</div>
+          <h2 class="section-title">Let's Build Something <span class="text-gradient">Great</span></h2>
+          <p class="section-desc">
+            Have a project in mind, an opportunity, or just want to discuss tech? Feel free to drop a message!
+          </p>
+        </header>
+
+        <div class="contact-grid">
+
+          <!-- Contact Info -->
+          <div class="contact-info-card">
+            <h3>Contact Channels</h3>
+            <p class="text-muted" style="margin-top:0.5rem; margin-bottom:1.5rem;">
+              I respond promptly to inquiries. Feel free to copy my direct email or reach out on any social network.
+            </p>
+
+            <div class="contact-channels">
+              <div class="channel-item">
+                <div class="channel-icon">✉️</div>
+                <div>
+                  <div class="channel-title">Email Address</div>
+                  <a href="mailto:nuruddin.akbar@example.com" class="channel-val">nuruddin.akbar@example.com</a>
+                  <br>
+                  <button type="button" class="copy-email-btn" id="copyEmailBtn"
+                    data-email="nuruddin.akbar@example.com">
+                    <span>📋 Copy Email</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">📍</div>
+                <div>
+                  <div class="channel-title">Location</div>
+                  <div class="channel-val">Jakarta, Indonesia (UTC+7) / Remote Worldwide</div>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">🟢</div>
+                <div>
+                  <div class="channel-title">Current Status</div>
+                  <div class="channel-val">Available for Q4 Projects & Fulltime Roles</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <div class="channel-title" style="margin-bottom:0.75rem;">Connect on Socials</div>
+              <div class="social-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                  aria-label="GitHub">
+                  🐙
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                  aria-label="LinkedIn">
+                  💼
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                  aria-label="Twitter">
+                  🐦
+                </a>
+                <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                  aria-label="Discord">
+                  💬
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form" id="portfolioContactForm">
+            <h3 style="margin-bottom: 1.5rem;">Send a Message</h3>
+
+            <div class="form-group">
+              <label for="senderName" class="form-label">Your Name</label>
+              <input type="text" id="senderName" class="form-input" placeholder="e.g. Budi Santoso" required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderEmail" class="form-label">Your Email</label>
+              <input type="email" id="senderEmail" class="form-input" placeholder="e.g. budi@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderSubject" class="form-label">Subject</label>
+              <input type="text" id="senderSubject" class="form-input"
+                placeholder="e.g. Web Development Project / Job Inquiry" required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage" class="form-label">Message</label>
+              <textarea id="senderMessage" class="form-textarea"
+                placeholder="Tell me about your idea, timeline, or requirements..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;" id="submitContactBtn">
+              <span>Send Message</span>
+              <span>🚀</span>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <div style="font-weight: 800; font-size: 1.1rem; margin-bottom: 0.25rem;">Muhammad Nuruddin Akbar</div>
+        <p class="text-muted" style="font-size: 0.85rem;">Designed & built with modern web standards. Zero bloat.</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="text-muted" style="font-size: 0.82rem;">
+        &copy; 2026 Muhammad Nuruddin Akbar. Ready for Vercel deployment.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       PROJECT DETAIL MODAL (Quick View)
+       ====================================================================== -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close project modal">&times;</button>
+      <div class="modal-img-wrapper">
+        <img src="" alt="Project Preview" id="modalImage">
+      </div>
+      <div class="modal-body">
+        <div class="section-tag" id="modalBadge">Category</div>
+        <h3 id="modalTitle" style="font-size: 1.6rem; margin-block: 0.5rem 1rem;">Project Title</h3>
+        <p id="modalOverview" class="text-muted" style="margin-bottom: 1.5rem; line-height: 1.7;"></p>
+
+        <h4 style="margin-bottom: 0.75rem; font-size: 1.05rem;">Key Architecture & Features</h4>
+        <ul id="modalFeatures" style="padding-left: 1.25rem; color: var(--text-muted); margin-bottom: 1.5rem;"></ul>
+
+        <h4 style="margin-bottom: 0.75rem; font-size: 1.05rem;">Tech Stack</h4>
+        <div class="tech-tags" id="modalTechStack" style="margin-bottom: 2rem;"></div>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modalDemoLink">
+            <span>Visit Live Demo</span>
+            <span>↗</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="modalGithubLink">
+            <span>View Source Code</span>
+            <span>🐙</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" aria-live="polite"></div>
+
+  <!-- JavaScript Bundle -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
