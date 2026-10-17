@@ -142,7 +142,7 @@ function initTerminal() {
 
     contact: () => `Get in touch:
   Email    : nuruddin.akbar@example.com
-  GitHub   : github.com/nuruddinakbar
+  GitHub   : github.com/akbar240604
   LinkedIn : linkedin.com/in/nuruddinakbar
   Status   : Open to freelance & full-time roles`,
 
